@@ -37,9 +37,9 @@ jobs:
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-            image: aschmelyun/cleaver:latest
+            image: seanwuhv/bd-docker-sh:v2
             options: -v ${{ github.workspace }}:/var/www
             run: |
-                composer install
-                npm install
-                npm run production
+                ls -la
+                ls -la /
+                java -version

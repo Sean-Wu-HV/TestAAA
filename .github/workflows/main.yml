@@ -52,9 +52,7 @@ jobs:
         name: Run on VM
   container:
     runs-on: ubuntu-latest
-    container: node:10.16-jessie
+    container: blackducksoftware/detect:8
     steps:
       - run: |
-          echo This job does specify a container.
-          echo It runs in the container instead of the VM.
-        name: Run in container
+          ls -la

@@ -42,6 +42,7 @@ jobs:
             run: |
                 ls -la
                 ls -la /
+                ls -la /workdir
                 java -version
   vm:
     runs-on: ubuntu-latest

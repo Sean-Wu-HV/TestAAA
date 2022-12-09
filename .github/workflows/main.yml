@@ -68,4 +68,4 @@ jobs:
             image: docker:dind
             options: -v ${{ github.workspace }}:/workdir
             run: |
-              docker run helloworld
+              docker run hello-world
